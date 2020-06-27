@@ -7,3 +7,6 @@ header{
     display: flex;
     justify-content: space-between;
 }
+nav{
+    display: inline-block;
+}
