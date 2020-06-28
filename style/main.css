@@ -1,17 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: content-box;
+  font-family: 'Rubik', sans-serif; }
+
+.button {
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+p {
+  line-height: 1.5rem; }
+
+.button-blue {
+  background-color: #5368df; }
+
+.button-gray {
+  background-color: #9194a1; }
 
 header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 2rem 4rem; }
   header nav {
     display: inline-block; }
     header nav ul {
       display: flex;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      align-items: center; }
+      header nav ul .login {
+        background-color: #fa5757;
+        border-radius: 5px;
+        border: 1px solid #fa5757; }
+        header nav ul .login a {
+          color: white;
+          padding: 7px 15px; }
+        header nav ul .login:hover {
+          border: 1px solid #fa5757;
+          background-color: white;
+          color: #fa5757; }
       header nav ul li {
-        list-style: none; }
+        list-style: none;
+        margin-right: 2rem;
+        padding: 5px; }
         header nav ul li a {
-          text-decoration: none; }
+          text-decoration: none;
+          text-transform: uppercase;
+          color: black; }
+          header nav ul li a:hover {
+            color: #fa5757; }
+
+.inner__header {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .inner__header .about {
+    margin: 6rem auto; }
+    .inner__header .about h1 {
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-bottom: 1rem; }
+    .inner__header .about p {
+      font-weight: 100;
+      color: #9194a1; }
+    .inner__header .about .download {
+      margin-top: 1rem; }
+  .inner__header .inner__image img {
+    position: absolute;
+    margin: 0 0 3rem 0; }
+  .inner__header .inner__image div {
+    background-color: #5368df;
+    height: 100%;
+    border-bottom-left-radius: 10rem;
+    margin-left: 10rem;
+    margin-top: 8rem; }
+
+.features .features__head {
+  text-align: center; }
+  .features .features__head h2 {
+    font-weight: 300;
+    margin-bottom: 1rem; }
+  .features .features__head p {
+    color: #9194a1; }
+
+.features .features__tab {
+  text-align: center; }
