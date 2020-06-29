@@ -9,19 +9,28 @@
 .button{
     border: none;
     color:white;
-    padding:8px;
+    padding:10px;
     border-radius:5px;
     cursor: pointer;
+    &:hover{
+        background-color: white;
+    }
 }
 p{
     line-height: 1.5rem;
+    color:hsl(229, 8%, 60%);
 }
 .button-blue{
     background-color:hsl(231, 69%, 60%);
-    
+    border:1px solid hsl(231, 69%, 60%);
+    &:hover{
+        color:hsl(231, 69%, 60%);
+    }
 }
 .button-gray{
-    background-color: hsl(229, 8%, 60%);
+    color: black;
+    font-weight: 500;
+    border: 1px solid #efefef;
 }
 header{
     display: flex;
@@ -84,7 +93,10 @@ header{
             color:hsl(229, 8%, 60%);
         }
         .download{
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            &>*{
+                margin-right:1rem;
+            }
         }
     }
    .inner__image{
@@ -94,7 +106,7 @@ header{
         }
         div{
             background-color: hsl(231, 69%, 60%);
-            height: 100%;
+            height: 90%;
             border-bottom-left-radius: 10rem;
             margin-left: 10rem;
             margin-top: 8rem;
@@ -103,6 +115,7 @@ header{
     
 }
 .features{
+    margin-bottom: 10rem;
     .features__head{
         text-align: center;
         h2{
@@ -114,6 +127,99 @@ header{
         }
     }
     .features__tab{
+        margin-top: 1rem;
+        ul{
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            
+            li{
+                list-style:none;
+                padding: 1.5rem 2rem;
+                border-bottom: 1px solid hsl(229, 8%, 60%);
+            }
+        }
+    
+    }
+    .inner__feature{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .inner__image{
+            img{
+                position: absolute;
+                margin: 0 0 0 5rem;
+            }
+            div{
+                background-color: hsl(231, 69%, 60%);
+                height: 90%;
+                border-bottom-right-radius: 10rem;
+                margin-right: 10rem;
+                margin-top: 8rem;
+            }
+        }
+        .about{
+            margin: 6rem auto;
+            p{
+                color: hsl(229, 8%, 60%);
+                margin-top:1rem;
+            }
+            button{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+.download__extension{
+    .download__extension__head{
         text-align: center;
+        p{
+            color: hsl(229, 8%, 60%);
+            margin-top: 1rem;
+        }
+    }
+    .add__to__browser{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        .firefox{
+            margin-top: 3rem;
+        }
+        .opera{
+            margin-top: 6rem;
+        }
+        div{
+            -webkit-box-shadow: 0px 6px 23px -5px rgba(0,0,0,0.18);
+            -moz-box-shadow: 0px 6px 23px -5px rgba(0,0,0,0.18);
+            box-shadow: 0px 6px 23px -5px rgba(0,0,0,0.18);
+            padding: 2rem;
+            margin: 1.5rem;
+            display: grid;
+            justify-content: center;
+            border-radius: 5px;
+            height: 100%;
+           
+            img,h4,p,button{
+                justify-self: center;
+                margin-top: 1rem;
+            }
+            span{
+                border: 1.5rem hsl(229, 8%, 60%);
+                display: block;
+            }
+            img{
+               width: 5rem;
+               display: flex;
+            }
+        }
+    }
+}
+.faq{
+    margin-top: 1rem;
+    .faq__inner__head{
+        text-align: center;
+        p{
+            margin-top: 1rem;
+        }
     }
 }
